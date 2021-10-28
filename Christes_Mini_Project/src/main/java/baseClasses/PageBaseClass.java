@@ -63,7 +63,7 @@ public class PageBaseClass extends BaseTestClass {
 	/********cancel************/
 	public LandingPage cancelclick() {
 		
-		driver.findElement(By.xpath("//*[@id='close_signup']/svg")).click();
+		driver.findElement(By.xpath("//div[@class='fast-signup-close']/img")).click();
 		LandingPage landingPage = new LandingPage(driver, logger);
 		PageFactory.initElements(driver, landingPage);
 		return landingPage;

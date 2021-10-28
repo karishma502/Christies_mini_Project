@@ -18,10 +18,10 @@ public class Shop_by_Photographs extends PageBaseClass {
 	
 	public Shop_by_Photographs submit_shop_by_photo(){
 		//send.click();
-		logger.log(Status.PASS, "Cliecked the Send Button");
-		Shop_by_Photographs shopbycategory = new Shop_by_Photographs(driver, logger);
-		PageFactory.initElements(driver, shopbycategory);
-		return shopbycategory;
+		logger.log(Status.PASS, "Clicked the Send Button");
+		Shop_by_Photographs shopbyphotographs = new Shop_by_Photographs(driver, logger);
+		PageFactory.initElements(driver, shopbyphotographs);
+		return shopbyphotographs;
 	}
 	
 }

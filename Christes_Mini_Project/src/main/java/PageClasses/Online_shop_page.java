@@ -19,10 +19,21 @@ public class Online_shop_page extends PageBaseClass {
 		
 	}
 
+	@FindBy(xpath = "//a[contains(text(),'ONLINE SHOP')]")
+	public WebElement onlineshopClick;
+	
+	@FindBy(xpath = "//a[contains(text(),'Shop now')]")
+	public WebElement shopNowClick;
+	
+	public void clickEleOnlineShop() {
+		onlineshopClick.click();
+		System.out.println("Click onlineshopClick Button");
+	}
 	
 	public Shop_by_category submit_shop_by_cat(){
-		//send.click();
-		logger.log(Status.PASS, "Cliecked the Send Button");
+		shopNowClick.click();
+		logger.log(Status.PASS, "Clicked the submit_shop_by_cat");
+		System.out.println("Clicked the submit_shop_by_cat");
 		Shop_by_category shopbycategory = new Shop_by_category(driver, logger);
 		PageFactory.initElements(driver, shopbycategory);
 		return shopbycategory;

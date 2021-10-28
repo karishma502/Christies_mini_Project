@@ -18,17 +18,32 @@ public class Private_Sales extends PageBaseClass {
 		super(driver, logger);
 		
 	}
+	
+	@FindBy(xpath = "//a[contains(text(),'Private Sales')]")
+	public WebElement privateSalesClick;
 
 
 
-	public Online_shop_page clickwritemail() {
-		logger.log(Status.INFO, "Clicking the  write mail link");
-		//writemail.click();
-		logger.log(Status.PASS, "Clicked the Write Mail Link");
-		Online_shop_page mailwritepage = new Online_shop_page(driver, logger);
-		PageFactory.initElements(driver, mailwritepage);
-		return mailwritepage;
+	public FeaturePage clickPrivatesale() {
+		logger.log(Status.INFO, "Clicking the clickPrivatesale");
+		privateSalesClick.click();
+		logger.log(Status.PASS, "Clicked the clickPrivatesale");
+		System.out.println("Click the Private Sale");
+		FeaturePage featurepage = new FeaturePage(driver, logger);
+		PageFactory.initElements(driver, featurepage);
+		return featurepage;
 		
 	}
+	
+	/*public Online_shop_page clickOnlineShop() {
+		logger.log(Status.INFO, "Clicking the clickOnlineShop");
+		privateSalesClick.click();
+		logger.log(Status.PASS, "Clicked the clickOnlineShop");
+		System.out.println("Click the Private Sale");
+		Online_shop_page onlineshopPage = new Online_shop_page(driver, logger);
+		PageFactory.initElements(driver, onlineshopPage);
+		return onlineshopPage;
+		
+	}*/
 
 }
