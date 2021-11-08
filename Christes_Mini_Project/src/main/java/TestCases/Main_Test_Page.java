@@ -4,6 +4,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import org.testng.annotations.Test;
 
+import PageClasses.AuctionSecondPage;
+import PageClasses.Auctions;
 import PageClasses.FeaturePage;
 import PageClasses.FindOutMore_Page;
 import PageClasses.LandingPage;
@@ -25,6 +27,8 @@ public class Main_Test_Page extends BaseTestClass{
 	Shop_by_Photographs shopbyphotographs;
 	FeaturePage featurepage;
 	FindOutMore_Page findoutmore;
+	Auctions auction;
+	AuctionSecondPage auctionsecondpg;
 	
 	@Test
 	public void christes_main_method() throws InterruptedException{
@@ -54,7 +58,7 @@ public class Main_Test_Page extends BaseTestClass{
 		shopbyphotographs = shopbycategory.submit_shop_by_photo(); 
 		Thread.sleep(10000); */
 		
-		featurepage = privatesale.clickPrivatesale();
+/*		featurepage = privatesale.clickPrivatesale();
 		Thread.sleep(10000);
 		featurepage.clickEleFeature();
 		Thread.sleep(10000);
@@ -62,9 +66,18 @@ public class Main_Test_Page extends BaseTestClass{
 		//Thread.sleep(10000);
 		findoutmore.getTextString();
 		Thread.sleep(10000);
-		findoutmore.play();
-		//Thread.sleep(10000);
-		driver.quit();
+		//findoutmore.play();
+		//Thread.sleep(10000);*/
+		
+		
+		auction =signin.clickAuction(); 
+		Thread.sleep(10000);
+		auctionsecondpg =auction.clickWatch();
+		Thread.sleep(10000);
+		
+		
+		
+		//driver.quit();
 		
 		
 	}

@@ -32,6 +32,9 @@ public class Signin_page extends PageBaseClass {
 
 	@FindBy(xpath = "//button[@class='chr-button chr-button--primary chr-button--dark chr-button--block']")
 	public WebElement submitLogin_button;
+	
+	@FindBy(xpath = "//a[contains(text(),'Auctions')]")
+	public WebElement auctionclick;
 
 	public Private_Sales doLogin(String userName, String password) {
 		
@@ -88,6 +91,16 @@ public class Signin_page extends PageBaseClass {
 		PageFactory.initElements(driver, privatesale);
 		return privatesale;
 	}
+	
+	public Auctions clickAuction(){
+		auctionclick.click();
+		logger.log(Status.PASS, "Clicked the clickAuction Button");
+		System.out.println("Clicked the clickAuction Button");
+		Auctions auction = new Auctions(driver, logger);
+		PageFactory.initElements(driver, auction);
+		return auction;
+	}
+	
 	
 	public void verifyPasswordField(){
 		veriyElementIsDisplayed(password_TextBox);
