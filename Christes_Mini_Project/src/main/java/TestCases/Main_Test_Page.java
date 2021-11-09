@@ -85,7 +85,7 @@ public class Main_Test_Page extends BaseTestClass{
 		
 		
 		
-	storiespage = signin.clickStoriesPage();
+		storiespage = signin.clickStoriesPage();
 		
 		Thread.sleep(9000);
 		storiespage.firstparagraph();
