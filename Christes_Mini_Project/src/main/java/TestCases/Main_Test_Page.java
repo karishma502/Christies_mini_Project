@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import PageClasses.AuctionSecondPage;
 import PageClasses.Auctions;
+import PageClasses.Departments;
 import PageClasses.FeaturePage;
 import PageClasses.FindOutMore_Page;
 import PageClasses.LandingPage;
@@ -14,6 +15,9 @@ import PageClasses.Shop_by_Photographs;
 import PageClasses.Shop_by_category;
 import PageClasses.Online_shop_page;
 import PageClasses.Signin_page;
+import PageClasses.Specialist_Dept;
+import PageClasses.Storiespage;
+import PageClasses.indianarttype;
 import baseClasses.BaseTestClass;
 import baseClasses.PageBaseClass;
 import utilities.ConstantValue;
@@ -29,6 +33,10 @@ public class Main_Test_Page extends BaseTestClass{
 	FindOutMore_Page findoutmore;
 	Auctions auction;
 	AuctionSecondPage auctionsecondpg;
+	Departments departobject;
+	Specialist_Dept spec_dept;
+	indianarttype indianart;
+	Storiespage storiespage ;
 	
 	@Test
 	public void christes_main_method() throws InterruptedException{
@@ -47,18 +55,9 @@ public class Main_Test_Page extends BaseTestClass{
 		Thread.sleep(50000);
 		privatesale = signin.doLogin(ConstantValue.userName, ConstantValue.password);
 		Thread.sleep(10000);
-		/* onlineshopPage = privatesale.clickOnlineShop();
-		Thread.sleep(10000);
-		onlineshopPage.clickEleOnlineShop();
-		Thread.sleep(10000);
-		shopbycategory = onlineshopPage.submit_shop_by_cat();
-		Thread.sleep(10000);
-		//landingPage = pageBase.cancelclick();
-		Thread.sleep(10000);
-		shopbyphotographs = shopbycategory.submit_shop_by_photo(); 
-		Thread.sleep(10000); */
+	
 		
-/*		featurepage = privatesale.clickPrivatesale();
+		featurepage = privatesale.clickPrivatesale();
 		Thread.sleep(10000);
 		featurepage.clickEleFeature();
 		Thread.sleep(10000);
@@ -67,18 +66,34 @@ public class Main_Test_Page extends BaseTestClass{
 		findoutmore.getTextString();
 		Thread.sleep(10000);
 		//findoutmore.play();
-		//Thread.sleep(10000);*/
+		
 		
 		
 		auction =signin.clickAuction(); 
 		Thread.sleep(10000);
-		auctionsecondpg =auction.clickWatch();
+		auctionsecondpg =auction.clickCharity();
 		Thread.sleep(10000);
 		
-		
+		/*departobject=signin.submitDept();
+		//spec_dept = departobject.deptclick();
+		Thread.sleep(10000);
+		indianart= spec_dept.arttypeclick();
+		Thread.sleep(90000);
+		*/
 		
 		//driver.quit();
 		
+		
+		
+	storiespage = signin.clickStoriesPage();
+		
+		Thread.sleep(9000);
+		storiespage.firstparagraph();
+		storiespage.secparagraph();
+		storiespage.thirdparagraph();
+		storiespage.fourthparagraph();
+		storiespage.fifthparagraph();
+	
 		
 	}
 	

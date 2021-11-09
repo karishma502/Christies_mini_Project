@@ -36,6 +36,16 @@ public class Signin_page extends PageBaseClass {
 	@FindBy(xpath = "//a[contains(text(),'Auctions')]")
 	public WebElement auctionclick;
 
+	
+	@FindBy(xpath = "//a[contains(text(),'Departments')]")
+	public WebElement clickDept;
+	
+
+	@FindBy(xpath = "//a[contains(text(),'Stories')]")
+		//@FindBy(linkText ="Stories")
+	public WebElement storiesbutton;
+	
+	
 	public Private_Sales doLogin(String userName, String password) {
 		
 		useremail_TextBox.sendKeys(userName);
@@ -99,6 +109,26 @@ public class Signin_page extends PageBaseClass {
 		Auctions auction = new Auctions(driver, logger);
 		PageFactory.initElements(driver, auction);
 		return auction;
+	}
+	
+	public Departments submitDept(){
+		
+		clickDept.click();
+		logger.log(Status.PASS, "Cliecked the Submit Login Button");
+		Departments departobject = new Departments(driver, logger);
+		PageFactory.initElements(driver, departobject);
+		return departobject;
+	}
+
+
+	public Storiespage clickStoriesPage() {
+		storiesbutton.click();
+		System.out.println("stories button on signin page");
+		//return new Storiespage(driver, logger);
+		
+		Storiespage storiespage = new Storiespage(driver, logger);
+		PageFactory.initElements(driver, storiespage);
+		return storiespage;
 	}
 	
 	

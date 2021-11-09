@@ -17,11 +17,11 @@ public class Auctions extends PageBaseClass {
 		
 	}
 	
-	@FindBy(xpath = "//a[contains(text(),'Only Watch')]")
-	public WebElement onlywatch;
+	@FindBy(xpath = "//span[@class='chr-checkbox__label chr-body-s']")
+	public WebElement charity;
 	
-	public AuctionSecondPage clickWatch(){
-		onlywatch.click();
+	public AuctionSecondPage clickCharity(){
+		charity.click();
 		logger.log(Status.PASS, "Clicked the clickWatch Button");
 		System.out.println("Clicked the clickWatch Button");
 		AuctionSecondPage auctionsecondpg = new AuctionSecondPage(driver, logger);

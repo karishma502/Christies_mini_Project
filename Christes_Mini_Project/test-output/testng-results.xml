@@ -2,30 +2,30 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-06T22:53:11 IST" name="Default suite" finished-at="2021-11-06T22:55:29 IST" duration-ms="137642">
+  <suite started-at="2021-11-09T22:17:47 IST" name="Default suite" finished-at="2021-11-09T22:18:38 IST" duration-ms="50774">
     <groups>
     </groups>
-    <test started-at="2021-11-06T22:53:11 IST" name="Default test" finished-at="2021-11-06T22:55:29 IST" duration-ms="137642">
+    <test started-at="2021-11-09T22:17:47 IST" name="Default test" finished-at="2021-11-09T22:18:38 IST" duration-ms="50774">
       <class name="TestCases.Main_Test_Page">
-        <test-method signature="christes_main_method()[pri:0, instance:TestCases.Main_Test_Page@1b919693]" started-at="2021-11-06T22:53:11 IST" name="christes_main_method" finished-at="2021-11-06T22:55:28 IST" duration-ms="137151" status="FAIL">
+        <test-method signature="christes_main_method()[pri:0, instance:TestCases.Main_Test_Page@1b919693]" started-at="2021-11-09T22:17:47 IST" name="christes_main_method" finished-at="2021-11-09T22:18:37 IST" duration-ms="49050" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element is not clickable at point (824, 803)
-  (Session info: chrome=95.0.4638.54)
+              <![CDATA[element click intercepted: Element <button id="onetrust-accept-btn-handler" tabindex="0">...</button> is not clickable at point (845, 177). Other element would receive the click: <div class="col-xs-12 no-padding">...</div>
+  (Session info: chrome=95.0.4638.69)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-VPVH4IKM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 42a2ebbcb314a589a85ba869e766cc4a]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63697}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9cc3398bd205d9a901bf08ccd0f889dd]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (824, 803)
-  (Session info: chrome=95.0.4638.54)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="onetrust-accept-btn-handler" tabindex="0">...</button> is not clickable at point (845, 177). Other element would receive the click: <div class="col-xs-12 no-padding">...</div>
+  (Session info: chrome=95.0.4638.69)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-VPVH4IKM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 42a2ebbcb314a589a85ba869e766cc4a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63697}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9cc3398bd205d9a901bf08ccd0f889dd
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -39,14 +39,8 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
-at PageClasses.Auctions.clickWatch(Auctions.java:24)
-at TestCases.Main_Test_Page.christes_main_method(Main_Test_Page.java:75)
+at baseClasses.PageBaseClass.allowcookies(PageBaseClass.java:47)
+at TestCases.Main_Test_Page.christes_main_method(Main_Test_Page.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,7 +75,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- christes_main_method -->
-        <test-method is-config="true" signature="flushReports()[pri:0, instance:TestCases.Main_Test_Page@1b919693]" started-at="2021-11-06T22:55:28 IST" name="flushReports" finished-at="2021-11-06T22:55:29 IST" duration-ms="438" status="PASS">
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:TestCases.Main_Test_Page@1b919693]" started-at="2021-11-09T22:18:37 IST" name="flushReports" finished-at="2021-11-09T22:18:38 IST" duration-ms="1667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
